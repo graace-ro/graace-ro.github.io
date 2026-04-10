@@ -1,0 +1,117 @@
+{
+  "title": "🫁 Lung Cancer Global Clinical & Risk Factor Dataset (2015–2025)",
+  "subtitle": "A Comprehensive Multi-Year, Multi-Region Dataset for Lung Cancer Analysis & Prediction",
+  "description": "This dataset contains 1,500 patient records spanning 2015–2025 across all 6 WHO regions and 60 countries, with detailed clinical, demographic, lifestyle, genetic, and diagnostic information related to lung cancer. The data is inspired by WHO fact sheets and global cancer research statistics (GLOBOCAN 2020). It covers risk factors (smoking, occupational hazards, air pollution, genetics), symptoms, cancer types (NSCLC/SCLC with subtypes), staging, tumor size, metastasis, diagnosis methods, treatment modalities, and survival outcomes. Ideal for EDA, ML classification, survival analysis, geographic trend analysis, and public health research.",
+  "version": "2.0.0",
+  "created_date": "2026-03-06",
+  "last_updated": "2026-03-06",
+  "author": {
+    "name": "Khurram Shahzad",
+    "kaggle": "https://www.kaggle.com/zkskhurram",
+    "role": "Data Scientist & AI Enthusiast"
+  },
+  "mentor": {
+    "name": "Dr. Aammar Tufail",
+    "role": "AI & Data Science Mentor"
+  },
+  "source": {
+    "primary": "WHO Lung Cancer Fact Sheet (https://www.who.int/news-room/fact-sheets/detail/lung-cancer)",
+    "secondary": [
+      "GLOBOCAN 2020 - IARC Cancer Statistics",
+      "American Cancer Society",
+      "National Cancer Institute (NCI)",
+      "WHO Global Health Observatory"
+    ],
+    "note": "This is a synthetic dataset created for educational and research purposes, inspired by real-world statistics and clinical patterns."
+  },
+  "license": "CC BY-SA 4.0",
+  "tags": [
+    "lung-cancer",
+    "oncology",
+    "healthcare",
+    "medical-dataset",
+    "cancer-prediction",
+    "smoking",
+    "WHO",
+    "EDA",
+    "machine-learning",
+    "survival-analysis",
+    "public-health",
+    "NSCLC",
+    "SCLC",
+    "clinical-data"
+  ],
+  "dataset_info": {
+    "file_name": "lung_cancer_dataset.csv",
+    "file_format": "CSV",
+    "encoding": "UTF-8",
+    "total_records": 1500,
+    "total_features": 41,
+    "time_range": "2015–2025 (11 years)",
+    "who_regions": 6,
+    "countries": 60,
+    "target_variable": "Survived",
+    "missing_values": "None"
+  },
+  "feature_descriptions": {
+    "Patient_ID": "Unique patient identifier (LC-XXXX)",
+    "Diagnosis_Year": "Year of diagnosis (2015–2025)",
+    "Diagnosis_Date": "Full diagnosis date (YYYY-MM-DD)",
+    "WHO_Region": "WHO region (Africa, Americas, South-East Asia, Europe, Eastern Mediterranean, Western Pacific)",
+    "Country": "Country of origin (60 countries across all WHO regions)",
+    "Age": "Patient age in years (30-89)",
+    "Gender": "Patient gender (Male/Female)",
+    "Smoking_Status": "Current Smoker / Former Smoker / Never Smoked",
+    "Cigarettes_Per_Day": "Average cigarettes smoked per day (0 for non-smokers)",
+    "Years_Smoking": "Total years of smoking history",
+    "Secondhand_Smoke": "Exposure to secondhand smoke (Yes/No)",
+    "Family_History": "Family history of lung cancer (Yes/No)",
+    "Occupational_Hazard": "Exposure to workplace carcinogens like asbestos, chemicals (Yes/No)",
+    "Air_Pollution_Exposure": "Level of air pollution exposure (Low/Moderate/High)",
+    "Alcohol_Use": "Alcohol consumption level (No Alcohol/Moderate/Heavy)",
+    "BMI": "Body Mass Index",
+    "Exercise_Frequency": "Physical activity level (Low/Moderate/High)",
+    "Chronic_Lung_Disease": "History of chronic lung diseases like COPD (Yes/No)",
+    "Asbestos_Exposure": "Direct asbestos exposure (Yes/No)",
+    "Radon_Exposure": "Radon gas exposure at home/work (Yes/No)",
+    "Previous_Cancer_History": "History of any previous cancer (Yes/No)",
+    "Genetic_Mutation": "Known genetic mutations (EGFR/ALK/KRAS/TP53/ROS1/BRAF/MET/HER2/RET/No Mutation)",
+    "Coughing": "Persistent cough symptom (Yes/No)",
+    "Shortness_of_Breath": "Difficulty breathing symptom (Yes/No)",
+    "Chest_Pain": "Chest pain symptom (Yes/No)",
+    "Coughing_Blood": "Hemoptysis - coughing up blood (Yes/No)",
+    "Fatigue": "Chronic fatigue symptom (Yes/No)",
+    "Weight_Loss": "Unexplained weight loss (Yes/No)",
+    "Wheezing": "Wheezing symptom (Yes/No)",
+    "Recurrent_Infections": "Recurrent lung infections (Yes/No)",
+    "Swallowing_Difficulty": "Difficulty swallowing (Yes/No)",
+    "Finger_Clubbing": "Digital clubbing of fingers (Yes/No)",
+    "Cancer_Type": "Type of lung cancer (NSCLC - Non-Small Cell / SCLC - Small Cell)",
+    "NSCLC_Subtype": "NSCLC subtype (Adenocarcinoma / Squamous Cell / Large Cell / Not Applicable for SCLC)",
+    "Cancer_Stage": "Cancer stage at diagnosis (Stage I / II / III / IV)",
+    "Tumor_Size_cm": "Tumor size in centimeters at diagnosis",
+    "Metastasis": "Whether cancer has metastasized (Yes/No)",
+    "Diagnosis_Method": "Method used for diagnosis (CT Scan / PET Scan / Biopsy / Bronchoscopy / LDCT Screening / Chest X-Ray / MRI)",
+    "Treatment": "Primary treatment modality (Surgery / Chemotherapy / Radiotherapy / Immunotherapy / Targeted Therapy / Chemo + Radiation / Surgery + Chemotherapy / Palliative Care)",
+    "Survival_Months": "Months survived after diagnosis",
+    "Survived": "Survival status (Yes/No) - TARGET VARIABLE"
+  },
+  "key_statistics": {
+    "lung_cancer_facts": {
+      "leading_cause": "Lung cancer is the #1 cause of cancer-related deaths worldwide",
+      "annual_deaths": "~1.8 million deaths globally (18% of all cancer deaths) - GLOBOCAN 2020",
+      "smoking_attribution": "~85% of lung cancer cases are attributed to smoking",
+      "types": "NSCLC (~85% of cases) and SCLC (~15% of cases)",
+      "5_year_survival": "Overall 5-year survival rate is ~22% (varies significantly by stage)"
+    }
+  },
+  "usage_suggestions": [
+    "📊 Exploratory Data Analysis (EDA) - Understand risk factor distributions",
+    "🤖 Machine Learning Classification - Predict survival outcomes",
+    "📈 Survival Analysis - Kaplan-Meier curves by treatment/stage",
+    "🔬 Feature Importance Analysis - Identify key predictors",
+    "🌍 Geographic Analysis - Compare cancer patterns across countries",
+    "🧬 Genetic Mutation Analysis - Study mutation-treatment relationships",
+    "🏥 Clinical Decision Support - Treatment outcome analysis"
+  ]
+}
