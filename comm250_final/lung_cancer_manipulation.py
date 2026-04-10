@@ -21,6 +21,6 @@ for column in df.select_dtypes(include=["str"]):
     df_copy[column]=label_encoder.transform(df_copy[column])
 print(df_copy.head(), df.head())
 # %%
-pd.plotting.scatter_matrix(df['Age', 'Family_History', 'Survived'])
+pd.plotting.scatter_matrix(df_copy[['Age', 'Gender', 'Smoking_Status', 'Years_Smoking', 'Family_History', 'Air_Pollution_Exposure', 'Survived']], figsize=(20,20))
 plt.show()
 # %%
