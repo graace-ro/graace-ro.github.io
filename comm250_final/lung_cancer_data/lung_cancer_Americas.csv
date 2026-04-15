@@ -1,0 +1,256 @@
+,Survived,Categorical_Outlier,Numeric_Outlier,Is_Outlier,Outlier_Reason,Country
+1,Yes,False,False,False,,Mexico
+24,Yes,False,False,False,,Argentina
+26,No,False,False,False,,Colombia
+27,Yes,False,False,False,,Argentina
+29,No,False,False,False,,Brazil
+34,No,False,False,False,,USA
+42,Yes,False,False,False,,Venezuela
+46,Yes,False,False,False,,Canada
+53,Yes,False,False,False,,Argentina
+54,No,True,False,True,Diagnosis_Method=MRI; ,Canada
+58,No,False,False,False,,Argentina
+75,No,False,False,False,,Colombia
+83,No,False,False,False,,Cuba
+89,No,False,False,False,,Chile
+92,No,False,False,False,,Canada
+96,No,False,False,False,,Brazil
+97,Yes,False,False,False,,Mexico
+99,Yes,True,True,True,Years_Smoking=44; Genetic_Mutation=TP53; ,Cuba
+100,Yes,False,False,False,,Mexico
+107,No,False,False,False,,Peru
+117,No,True,False,True,Genetic_Mutation=ROS1; Treatment=Palliative Care; ,Mexico
+119,No,False,False,False,,Venezuela
+123,No,False,False,False,,Colombia
+132,No,False,False,False,,Peru
+133,Yes,False,False,False,,Argentina
+134,Yes,False,False,False,,Cuba
+137,No,False,False,False,,Canada
+141,Yes,True,False,True,Genetic_Mutation=BRAF; Diagnosis_Method=MRI; ,Argentina
+155,No,False,False,False,,Mexico
+157,No,False,False,False,,Chile
+159,No,False,False,False,,Brazil
+164,No,False,False,False,,USA
+172,No,False,False,False,,Canada
+173,Yes,False,False,False,,Venezuela
+177,Yes,False,False,False,,Cuba
+178,Yes,True,False,True,Genetic_Mutation=MET; ,Venezuela
+180,No,False,False,False,,USA
+193,No,False,False,False,,USA
+194,No,True,False,True,Treatment=Palliative Care; ,Mexico
+197,Yes,True,False,True,Genetic_Mutation=HER2; ,Peru
+201,No,True,False,True,Genetic_Mutation=BRAF; ,Venezuela
+205,No,False,False,False,,Peru
+214,No,False,False,False,,Canada
+218,No,True,True,True,Survival_Months=83; Genetic_Mutation=RET; ,Cuba
+219,No,False,False,False,,Cuba
+229,Yes,False,False,False,,Mexico
+232,No,True,False,True,Genetic_Mutation=MET; ,Mexico
+244,No,False,True,True,Survival_Months=78; ,Venezuela
+250,Yes,False,False,False,,Colombia
+255,No,False,False,False,,USA
+263,Yes,False,False,False,,Canada
+267,No,False,False,False,,Mexico
+284,No,False,False,False,,Peru
+289,Yes,True,False,True,Genetic_Mutation=RET; ,Venezuela
+306,No,False,False,False,,Mexico
+312,No,False,False,False,,USA
+317,No,True,False,True,Treatment=Palliative Care; ,USA
+330,No,True,False,True,Diagnosis_Method=MRI; ,Venezuela
+342,Yes,True,False,True,Cancer_Stage=Stage IV; Treatment=Immunotherapy; ,Mexico
+347,Yes,False,False,False,,Brazil
+362,No,True,False,True,Diagnosis_Method=MRI; ,Peru
+378,No,False,False,False,,Peru
+382,Yes,False,False,False,,USA
+383,No,False,False,False,,Canada
+393,Yes,False,True,True,Cigarettes_Per_Day=42; ,Chile
+395,No,True,False,True,Genetic_Mutation=ROS1; ,USA
+405,No,False,False,False,,Chile
+407,No,False,False,False,,Brazil
+409,No,False,False,False,,Peru
+415,No,False,False,False,,Colombia
+427,No,False,False,False,,Brazil
+438,No,False,False,False,,Argentina
+446,Yes,False,False,False,,Peru
+460,Yes,False,False,False,,Colombia
+473,No,False,False,False,,Peru
+479,Yes,False,False,False,,Cuba
+482,No,True,False,True,Genetic_Mutation=MET; ,Chile
+488,No,True,False,True,Genetic_Mutation=MET; ,Argentina
+491,Yes,False,False,False,,Venezuela
+494,No,False,False,False,,Cuba
+499,No,False,False,False,,Brazil
+502,Yes,False,False,False,,Colombia
+504,No,False,False,False,,Chile
+517,No,False,False,False,,Cuba
+521,Yes,True,False,True,Genetic_Mutation=BRAF; ,Canada
+523,Yes,False,False,False,,Mexico
+526,No,False,False,False,,Canada
+527,No,False,False,False,,Colombia
+530,Yes,False,False,False,,Canada
+534,No,True,False,True,Genetic_Mutation=BRAF; ,Cuba
+537,Yes,True,False,True,Treatment=Immunotherapy; ,Argentina
+541,No,False,False,False,,Canada
+542,Yes,False,False,False,,Cuba
+545,Yes,False,False,False,,Venezuela
+548,No,False,False,False,,Argentina
+554,No,False,False,False,,Cuba
+573,No,False,False,False,,Chile
+581,No,False,False,False,,Chile
+586,No,False,False,False,,Venezuela
+587,Yes,False,False,False,,Canada
+593,No,False,False,False,,Brazil
+599,No,False,False,False,,Venezuela
+607,No,False,False,False,,Colombia
+609,Yes,False,False,False,,Cuba
+611,Yes,False,False,False,,USA
+612,Yes,False,False,False,,Venezuela
+616,Yes,False,False,False,,Colombia
+622,No,False,False,False,,Chile
+631,No,False,True,True,BMI=40.0; ,Chile
+633,No,False,False,False,,Chile
+634,No,False,False,False,,Colombia
+636,No,False,False,False,,Chile
+638,No,False,False,False,,Brazil
+648,No,True,False,True,Genetic_Mutation=ROS1; ,Peru
+650,No,False,False,False,,Mexico
+662,Yes,True,False,True,Diagnosis_Method=MRI; Treatment=Chemo + Radiation; ,Cuba
+680,Yes,False,False,False,,Canada
+694,No,False,False,False,,USA
+703,No,False,False,False,,Peru
+723,Yes,True,False,True,Cancer_Stage=Stage IV; Treatment=Palliative Care; ,Colombia
+724,No,False,False,False,,Argentina
+732,No,False,False,False,,Brazil
+741,No,False,False,False,,Cuba
+744,Yes,False,False,False,,Brazil
+746,No,False,False,False,,Argentina
+748,No,False,False,False,,Argentina
+755,No,False,False,False,,Brazil
+762,Yes,True,False,True,Genetic_Mutation=ROS1; ,Venezuela
+769,Yes,False,False,False,,Cuba
+774,No,False,False,False,,Colombia
+775,No,True,False,True,Genetic_Mutation=ROS1; ,Colombia
+792,Yes,True,False,True,Genetic_Mutation=TP53; ,Canada
+795,No,False,False,False,,Colombia
+799,No,False,False,False,,Canada
+810,No,False,False,False,,Chile
+812,Yes,True,False,True,Genetic_Mutation=RET; ,Colombia
+814,No,False,False,False,,Peru
+815,Yes,True,False,True,Genetic_Mutation=MET; ,USA
+822,No,False,False,False,,Peru
+825,No,False,False,False,,Chile
+829,Yes,False,False,False,,USA
+832,No,False,False,False,,Brazil
+834,Yes,False,False,False,,Colombia
+841,No,False,False,False,,Canada
+842,No,True,False,True,Diagnosis_Method=MRI; ,Argentina
+843,No,False,False,False,,USA
+849,No,False,False,False,,Mexico
+852,No,False,True,True,Cigarettes_Per_Day=46; ,Brazil
+858,No,False,False,False,,Cuba
+867,No,False,False,False,,Colombia
+868,No,True,False,True,Genetic_Mutation=BRAF; ,Argentina
+876,No,False,False,False,,Cuba
+883,No,False,False,False,,Peru
+886,No,False,False,False,,Peru
+888,No,False,False,False,,Argentina
+889,No,False,False,False,,Canada
+890,No,False,False,False,,Mexico
+897,Yes,True,False,True,Genetic_Mutation=TP53; ,Peru
+904,Yes,False,False,False,,Argentina
+913,No,False,False,False,,Venezuela
+923,No,True,False,True,Genetic_Mutation=RET; Treatment=Palliative Care; ,Venezuela
+930,Yes,True,True,True,Tumor_Size_cm=10.4; Cancer_Stage=Stage IV; Treatment=Palliative Care; ,Canada
+934,No,False,False,False,,Cuba
+937,No,False,False,False,,Peru
+938,Yes,False,False,False,,Brazil
+939,Yes,True,False,True,Genetic_Mutation=RET; ,Peru
+941,Yes,False,False,False,,Argentina
+945,No,False,False,False,,Chile
+953,Yes,False,False,False,,Cuba
+965,Yes,False,False,False,,USA
+970,No,False,False,False,,Mexico
+971,Yes,False,False,False,,USA
+976,No,False,False,False,,Brazil
+1006,No,True,False,True,Genetic_Mutation=HER2; ,Colombia
+1018,No,True,False,True,Genetic_Mutation=BRAF; ,Mexico
+1023,Yes,False,False,False,,Peru
+1024,Yes,False,False,False,,Colombia
+1035,No,True,False,True,Genetic_Mutation=BRAF; ,Peru
+1036,Yes,False,False,False,,Cuba
+1041,Yes,True,False,True,Genetic_Mutation=RET; ,Canada
+1048,Yes,False,False,False,,Argentina
+1050,Yes,False,False,False,,USA
+1056,No,False,False,False,,Colombia
+1057,Yes,False,False,False,,Canada
+1058,No,False,False,False,,Mexico
+1060,Yes,False,False,False,,USA
+1078,Yes,False,False,False,,Chile
+1079,No,False,False,False,,Venezuela
+1083,No,False,False,False,,Chile
+1089,No,False,False,False,,Canada
+1104,Yes,False,False,False,,Argentina
+1105,No,False,False,False,,Canada
+1106,Yes,False,True,True,Cigarettes_Per_Day=33; ,Mexico
+1108,No,False,False,False,,Mexico
+1109,No,False,False,False,,Brazil
+1133,No,False,False,False,,Chile
+1135,No,True,False,True,Genetic_Mutation=BRAF; ,Cuba
+1146,No,False,False,False,,Colombia
+1147,No,False,False,False,,Venezuela
+1150,No,False,False,False,,Chile
+1156,Yes,False,False,False,,Peru
+1183,No,False,False,False,,Argentina
+1189,No,False,False,False,,Brazil
+1194,No,True,False,True,Treatment=Palliative Care; ,Brazil
+1200,No,False,False,False,,Mexico
+1220,No,False,True,True,Tumor_Size_cm=12.9; ,Cuba
+1223,No,False,False,False,,Argentina
+1230,No,False,False,False,,Venezuela
+1240,Yes,False,False,False,,Chile
+1241,Yes,False,False,False,,Argentina
+1250,Yes,True,False,True,Genetic_Mutation=ROS1; ,Brazil
+1251,No,False,False,False,,Colombia
+1258,No,False,False,False,,Canada
+1263,No,True,False,True,Genetic_Mutation=MET; ,Peru
+1265,Yes,False,False,False,,Canada
+1276,Yes,False,False,False,,Chile
+1279,No,False,False,False,,Mexico
+1281,Yes,False,False,False,,Argentina
+1282,No,False,False,False,,Argentina
+1285,No,False,False,False,,USA
+1292,No,False,False,False,,Brazil
+1304,No,True,False,True,Treatment=Palliative Care; ,Canada
+1324,No,False,False,False,,Brazil
+1326,No,False,False,False,,Canada
+1334,Yes,True,False,True,Genetic_Mutation=MET; ,Colombia
+1349,Yes,False,False,False,,Chile
+1356,No,False,False,False,,Argentina
+1382,No,False,False,False,,Brazil
+1385,No,False,False,False,,Peru
+1388,Yes,True,False,True,Genetic_Mutation=TP53; ,Mexico
+1390,No,False,False,False,,Argentina
+1394,Yes,False,False,False,,Peru
+1396,No,False,False,False,,Chile
+1398,No,False,False,False,,Brazil
+1400,No,False,False,False,,Peru
+1406,Yes,False,False,False,,Chile
+1415,No,False,False,False,,Peru
+1416,No,False,False,False,,Venezuela
+1417,Yes,True,False,True,Diagnosis_Method=MRI; ,Canada
+1430,No,False,False,False,,Cuba
+1433,No,True,False,True,Genetic_Mutation=ROS1; ,Brazil
+1435,No,True,False,True,Treatment=Palliative Care; ,Brazil
+1439,No,False,False,False,,Colombia
+1448,No,False,False,False,,USA
+1449,Yes,True,False,True,Genetic_Mutation=HER2; ,Chile
+1454,No,False,False,False,,Canada
+1455,No,False,True,True,Survival_Months=85; ,Colombia
+1460,Yes,True,False,True,Treatment=Immunotherapy; ,Canada
+1462,No,True,False,True,Genetic_Mutation=BRAF; Diagnosis_Method=MRI; ,Chile
+1464,Yes,False,False,False,,Cuba
+1467,No,True,False,True,Diagnosis_Method=MRI; ,Canada
+1483,No,True,False,True,Genetic_Mutation=MET; ,Peru
+1488,Yes,True,True,True,Cigarettes_Per_Day=33; Diagnosis_Method=MRI; Treatment=Chemo + Radiation; ,Brazil
+1493,Yes,False,False,False,,Cuba
+1497,No,False,False,False,,Argentina

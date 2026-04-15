@@ -6,7 +6,8 @@ from sklearn import preprocessing
 from scipy import stats
 df = pd.read_csv("./lung_cancer_data/lung_cancer_dataset.csv")
 df = df.drop(columns=['Patient_ID', 'Diagnosis_Date'])
-df = df[df['Country']=='USA']
+#df = df[(df['Country']=='USA') | (df['Country']=='Canada') | (df['Country']=='UK')]
+df = df[df['WHO_Region']=='Americas']
 #print(df.columns)
 numeric_cols = df.select_dtypes(include='number').columns
 categorical_cols = df.select_dtypes(include="str").columns
@@ -36,7 +37,8 @@ for group_value in ['No','Yes']:
         df.loc[outlier_index, 'Outlier_Reason'] += (col + '=' + df.loc[outlier_index, col].astype(str) + '; ')
 df['Is_Outlier'] = df['Categorical_Outlier'] | df['Numeric_Outlier'] #combine the categorical and numerical
 #print(df.head())
-working_df = df[['Survived', 'Categorical_Outlier', 'Numeric_Outlier', 'Is_Outlier', 'Outlier_Reason']].copy()
+working_df = df[['Survived', 'Categorical_Outlier', 'Numeric_Outlier', 'Is_Outlier', 'Outlier_Reason', 'Country']].copy()
 print(working_df.head())
-working_df.to_json('lung_cancer_USA.json')
-working_df.to_csv('lung_cancer_USA.csv')
+print(working_df.info())
+working_df.to_json('lung_cancer_Americas.json')
+working_df.to_csv('lung_cancer_Americas.csv')
