@@ -6,6 +6,7 @@ from sklearn import preprocessing
 from scipy import stats
 df = pd.read_csv("./lung_cancer_data/lung_cancer_dataset.csv")
 df = df.drop(columns=['Patient_ID', 'Diagnosis_Date'])
+df = df[df['Country']=='USA']
 #print(df.columns)
 numeric_cols = df.select_dtypes(include='number').columns
 categorical_cols = df.select_dtypes(include="str").columns
@@ -37,5 +38,5 @@ df['Is_Outlier'] = df['Categorical_Outlier'] | df['Numeric_Outlier'] #combine th
 #print(df.head())
 working_df = df[['Survived', 'Categorical_Outlier', 'Numeric_Outlier', 'Is_Outlier', 'Outlier_Reason']].copy()
 print(working_df.head())
-working_df.to_json('lung_cancer.json')
-working_df.to_csv('lung_cancer.csv')
+working_df.to_json('lung_cancer_USA.json')
+working_df.to_csv('lung_cancer_USA.csv')
