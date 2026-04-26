@@ -5,7 +5,9 @@ import shap
 
 # Load your dataset
 df = pd.read_csv("cardio_train.csv")
+
 df = df.drop(columns=['id', 'age'])
+print(df.info())
 
 # Focus on the cardio = 1 group
 df_disease = df[df['cardio'] == 1]
