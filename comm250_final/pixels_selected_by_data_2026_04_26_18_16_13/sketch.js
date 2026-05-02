@@ -161,19 +161,39 @@ function makeAgent(hole){
     index: hole.index,
     vx: random(-(gluc[hole.index]+chol[hole.index]), gluc[hole.index]+chol[hole.index]),
     vy: random(-(gluc[hole.index]+chol[hole.index]), gluc[hole.index]+chol[hole.index]),
+    speedMultiplier: 1,
     
     move(){ //this is just going to move where the left corner of the hole is that is moving. basic movement right now, the important function is the draw
       
-      //NEED TO ADD MOVEMENT SWITCH CASE. CAN DO BASED ON IF THEY'RE ACTIVE OR NOT
-      this.x += this.vx;
-      this.y += this.vy;
+      //NEED TO ADD MOVEMENT SWITCH CASE. CAN DO BASED ON 
+      switch(disease[this.index]){
+        case '0':
+          this.x += this.vx;
+          this.y += this.vy;
       
-      if(this.x<0 || this.x>width){
-        this.vx = -this.vx;
+          if(this.x<0 || this.x>width){
+            this.vx = -this.vx;
+          }
+          if (this.y < 0 || this.y>height) {
+            this.vy = -this.vy;
+          } 
+          break;
+        case '1':
+          if(frameCount%25==0){
+            this.speedMultiplier = 5;
+          }
+          this.speedMultiplier = lerp(this.speedMultiplier, 1, 0.05);
+          
+          this.x+=this.vx * this.speedMultiplier;
+          this.y+=this.vy * this.speedMultiplier;
+          if(this.x<0 || this.x>width){
+            this.vx = -this.vx;
+          }
+          if (this.y < 0 || this.y>height) {
+            this.vy = -this.vy;
+          } 
+          break;
       }
-      if (this.y < 0 || this.y>height) {
-        this.vy = -this.vy;
-      } 
     },
     
     draw(){ 
