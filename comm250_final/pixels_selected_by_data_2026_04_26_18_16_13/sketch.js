@@ -20,15 +20,16 @@ var alco = [];
 var active = [];
 var disease = [];
 
+let video;
+const devices = [];
+
 function preload(){
   cardio = loadTable('cardio_outliers.csv', 'csv', 'header');
+  navigator.mediaDevices.enumerateDevices().then(gotDevices);
 }
 function setup() {
   pixelDensity(1);
   createCanvas(windowWidth, windowHeight);
-  video = createCapture(VIDEO);
-  video.size(width, height);
-  video.hide();
   columnCount = cardio.getColumnCount();
   rowCount = cardio.getRowCount();
   //console.log(columnCount, rowCount);
@@ -48,6 +49,7 @@ function setup() {
   //have to make in setup so it doesn't reset to its original position every frame
   
   pixelNums = shuffle(pixelNums);
+  //PICK 50 THAT WORK WITHIN 0 AND THE WINDOWWIDTH THAT WILL WORK CAN DO IN GET POS? NEED TO CHANGE WORKFLOW. BIG CHANGE BIG CHANGE. THEY WILL ONLY BE ON THE LEFT SIDE OTHERWISE BIG PROBLEM.
   for(var i = 0; i<sampleSize; i++){ //can't do this for all 1401 outliers, instead need to choose a sample size. going to try 50 to start
     var index = floor(random(0, rowCount));
     var pos = getPos(pixelNums[index]);
@@ -55,13 +57,10 @@ function setup() {
     if(xPos<0 || xPos>width){
       xPos = pos[0];
     }
-    
     var yPos = pos[1] + floor(random(-weights[index], weights[index]));
     if(yPos<0||yPos>height){
       yPos = pos[1];
     }
-    // var xSize= heights[index]/10;
-    // var ySize = heights[index]/10;
     var size = floor(heights[index]/5);
     holes[i] = makeHole(xPos, yPos, size, size, index);
     agents[i] = makeAgent(holes[i]);
@@ -70,9 +69,34 @@ function setup() {
   
 }
 
+function gotDevices(deviceInfos){
+  for (let i = 0; i !== deviceInfos.length; ++i) {
+    const deviceInfo = deviceInfos[i];
+    if (deviceInfo.kind == 'videoinput') {
+      devices.push({
+        label: deviceInfo.label,
+        id: deviceInfo.deviceId
+      });
+    }
+  }
+  console.log(devices);
+  let supportedConstraints = navigator.mediaDevices.getSupportedConstraints();
+  console.log(supportedConstraints);
+  var constraints = {
+    video: {
+      deviceId: {
+        exact: devices[1].id
+      },
+    }
+  };
+  video = createCapture(constraints);
+  video.size(windowWidth, windowHeight);
+  video.hide();
+}
+
 function draw() {
   background(220);
-  image(video, 0, 0, width, height);
+  image(video, 0, 0, windowWidth, windowHeight);
   
   //i want to manage to get a square of pixels to leave a black spot behind, and then those copied pixels to travel with a square across the screen. hopefully demoing the behavior of my larger sketch where the square that is floating (and potentially its behavior) will be informed by a dataset
   //loadPixels();
