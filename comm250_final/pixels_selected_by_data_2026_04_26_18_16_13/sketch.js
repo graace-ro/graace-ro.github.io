@@ -25,11 +25,11 @@ const devices = [];
 
 function preload(){
   cardio = loadTable('cardio_outliers.csv', 'csv', 'header');
-  navigator.mediaDevices.enumerateDevices().then(gotDevices);
 }
 function setup() {
   pixelDensity(1);
   createCanvas(windowWidth, windowHeight);
+  navigator.mediaDevices.enumerateDevices().then(gotDevices);
   columnCount = cardio.getColumnCount();
   rowCount = cardio.getRowCount();
   //console.log(columnCount, rowCount);
@@ -79,14 +79,19 @@ function gotDevices(deviceInfos){
       });
     }
   }
+
+  
   console.log(devices);
   let supportedConstraints = navigator.mediaDevices.getSupportedConstraints();
   console.log(supportedConstraints);
+  let cam = devices.find(d => d.id.includes(
+"c0d3e5ac5d5ceed23e5d51fdb6fef2fd62e10d815c10fdbf4f416205e7eda32e"));
+
+  if (!cam) cam = devices[0]; // fallback
+  console.log(cam.id);
   var constraints = {
     video: {
-      deviceId: {
-        exact: devices[1].id
-      },
+      deviceId: { exact: cam.id }
     }
   };
   video = createCapture(constraints);
@@ -96,8 +101,14 @@ function gotDevices(deviceInfos){
 
 function draw() {
   background(220);
-  image(video, 0, 0, windowWidth, windowHeight);
-  
+  if(video && video.width != 0 && video.height != 0){
+    image(video, 0, 0, windowWidth, windowHeight);
+  }
+  else{
+    fill(0);
+    text("Waiting for camera...", windowWidth/2, windowHeight/2);
+    return;
+  }
   //i want to manage to get a square of pixels to leave a black spot behind, and then those copied pixels to travel with a square across the screen. hopefully demoing the behavior of my larger sketch where the square that is floating (and potentially its behavior) will be informed by a dataset
   //loadPixels();
   noStroke();
