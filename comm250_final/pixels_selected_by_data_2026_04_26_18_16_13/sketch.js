@@ -1,6 +1,6 @@
 let speedX = 5;
 let speedY = 5;
-var sampleSize = 50;
+var sampleSize = 25;
 var rectTest;
 var agents = [];
 var holes = [];
@@ -61,10 +61,12 @@ function setup() {
     if(yPos<0||yPos>height){
       yPos = pos[1];
     }
-    var size = floor(heights[index]/5);
+    var size = floor(heights[index]/2);
     holes[i] = makeHole(xPos, yPos, size, size, index);
     agents[i] = makeAgent(holes[i]);
   }
+
+  
 
   
 }
@@ -132,9 +134,12 @@ function draw() {
 }
 
 function getPos(pixNum){
-  xPos = floor(pixNum/100);
-  yPos = pixNum%100*10;
-  return [xPos, yPos];
+  let maxPix = max(pixelNums);
+  let minPix = min(pixelNums);
+  xPos = map(pixNum, minPix, maxPix, 0, windowWidth);
+  yPos = map(pixNum, minPix, maxPix, 0, windowHeight);
+  yPos += random(-500, 500);
+  return [xPos, constrain(yPos, 0, windowHeight)];
 }
 
 function makeHole(x, y, w, h, index){
