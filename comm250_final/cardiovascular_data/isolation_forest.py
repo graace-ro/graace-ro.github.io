@@ -1,7 +1,6 @@
 from sklearn.ensemble import IsolationForest
 import pandas as pd
 import numpy as np
-import shap
 
 # Load your dataset
 df = pd.read_csv("cardio_train.csv")
