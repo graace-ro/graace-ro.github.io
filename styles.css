@@ -1,5 +1,35 @@
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+h1{
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 800;
+}
+
+h2{
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    background-color: #d4d4d4;
+}
+
+h3{
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    margin: 25px;
+    padding: 5px;
+    background-color: #e5e3e6;
+}
+
+p{
+    font-family: 'Inter', sans-serif;
+    margin: 10px;
+    font-size: 18px;
 }
 
 header{
@@ -9,11 +39,34 @@ header{
     width: 100%;
     z-index: 1000;
     background-color: white;
-    padding: 5px;
+    padding: 25px;
+    background-color: #c4c4c4;
 }
 
-h2{
-    text-align: center;
+button{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#title-container{
+    margin: 5px;
+}
+
+#date-container{
+    margin: 5px;
+}
+
+.content-container{
+    margin: 50px 25px 50px 25px;
+}
+
+
+
+.proj-link{
+    font-size: 20px;
 }
 
 #about-me-container{
@@ -33,16 +86,21 @@ h2{
     margin: 50px;
 }
 
-#about-me-text{
+#about-me-description{
     text-align: center;
-    margin: 10px;
+    margin: 5px;
     padding: 50px;
 }
 
-.resume-container{
+#about-me-text{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 800px;
+}
+
+.proj{
+    margin: 50px;
 }
 
 .proj-screenshot{
@@ -50,12 +108,55 @@ h2{
     margin: 0px 50px 0px 50px;
 }
 
+.proj-button{
+    width: 150px;
+    height: 50px;
+    margin: 5px;
+}
+
 #viewport-container{
     display: flex;
     flex-direction: row;
+    align-items: center;;
 }
+
+
 
 #outlier-container{
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+.proj-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proj-link{
+    text-align: center;
+}
+
+.proj-description{
+    align-self: flex-start; /*aligns the p tag to the very beginning of the container's cross axis. so because the p tags are in a column flex box, the cross axis is the x axis, and thus the text stays aligned to the "start" of that which would be the left*/
+}
+
+.proj-button{
+    margin: 15px;
+}
+
+/*resume.html*/
+
+#resume{
+    align-self: center;
+    height: 95vh;
+    width: 100vw;
+}
+
+#resume-footer{
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
