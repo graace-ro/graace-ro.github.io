@@ -7,40 +7,41 @@
 </head>
 <body>
     <head>
-        <div>
-            <h1>Grace Rothwell's Portfolio</h1>
+        <div id="title-container">
+            <h1 id ="title">Grace Rothwell's Portfolio</h1>
         </div>
-        <div>
-            <p>Updated as of May 20th, 2026</p>
+        <div id="date-container">
+            <p id="date">Updated as of May 25th, 2026</p>
         </div>
     </head>
     <main>
-        <div>
-            <h2>About Me</h2>
-            <p>Hello! My name is Grace and I am a Junior at the University of North Carolina at Chapel Hill majoring in Computer Science, Communications on the New Media track, and minoring in Creative Writing on the Fiction track. I am passionate about merging storytelling, media creation, and computation together to create user focused digital products. On campus, I am Vice President and co-founder of Black Girls Code at UNC-Chapel Hill, and I am a TA for Girls Who Code at UNC.</p>
+        <div id="about-me-container">
+            <h2 id="about-me">About Me</h2>
+            <img src="assets/headshot.jpg" alt="Grace's headshot" id="headshot">
+            <p id="about-me-text">Hello! My name is Grace and I am a student at the University of North Carolina at Chapel Hill majoring in Computer Science, Communications on the New Media track, and minoring in Creative Writing on the Fiction track. I'll be graduating in 2028. I am passionate about merging storytelling, media creation, and computation together to create user focused digital products. On campus, I am Vice President and co-founder of Black Girls Code at UNC-Chapel Hill, and I am a TA for Girls Who Code at UNC.</p>
         </div>
-        <div>
-            <h2>Projects</h2>
-            <div>
-                <h3>Viewports - Fall 2025</h3>
-                <p>Viewports is a hyptertext narrative that challenges the user to ask themself if digital display and perception can properly encapsulate intimate information about a person. The user is tasked to explore an anonymous character's desk through manipulating a "viewport" in the center of the screen. As they explore the desk they learn more about the character through the items they keep.</p>
-                <p>Viewports uses HTML, CSS, and JavaScript. I also earned the <i>Jim Lampley Award</i> for my work on this multimedia project.</p>
-                <a href="https://graace-ro.github.io/viewports/">Play Viewports here.</a>
+        <div id="projects-container">
+            <h2 id="projects-title">Projects</h2>
+            <div class="proj" id="viewport-container">
+                <h3 class="proj-title" id="viewport-title">Viewports - Fall 2025</h3>
+                <p class="proj-text">Viewports is a hyptertext narrative that challenges the user to ask themself if digital display and perception can properly encapsulate intimate information about a person. The user is tasked to explore an anonymous character's desk through manipulating a "viewport" in the center of the screen. As they explore the desk they learn more about the character through the items they keep.</p>
+                <p class="proj-text">Viewports uses HTML, CSS, and JavaScript. I also earned the <i>Jim Lampley Award</i> for my work on this multimedia project.</p>
+                <a href="https://graace-ro.github.io/viewports/" class="link">Play Viewports here.</a>
             </div>
-            <div>
-                <h3>Outlier Mirrors - Spring 2026</h3>
-                <p>Outlier Mirrors is a creative exploration into how outliers in datasets can be represented differently, and if alternative methods can bring more emphasis to those outliers, or make them even more obscure. Each floating square is a mirror of the pixels where that square originated in the video feed, and its size, speed, movement behavior, and color tint are determined by attributes of the outlier itself. The data comes from a <a href="https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset">caridovascular disease dataset</a> from Kaggle.com</p>
-                <p>An isolation forest script was used to identify the outliers across multiple variables, and can be found <a href="isolation_forest.html">here.</a></p>
-                <p>Outlier Mirrors was coded in p5.js originally, and utilizes Python as well.</p>
-                <a href="comm250_final/grothwell_outlierMirrors/index.html">Experience Outlier Mirrors here.</a>
+            <div class="proj" id="outlier-container">
+                <h3 class="proj-title" id="outlier-title">Outlier Mirrors - Spring 2026</h3>
+                <p class="proj-text">Outlier Mirrors is a creative exploration into how outliers in datasets can be represented differently, and if alternative methods can bring more emphasis to those outliers, or make them even more obscure. Each floating square is a mirror of the pixels where that square originated in the video feed, and its size, speed, movement behavior, and color tint are determined by attributes of the outlier itself. The data comes from a <a href="https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset" class="link">cardiovascular disease dataset</a> from Kaggle.com</p>
+                <p class="proj-text">An isolation forest script was used to identify the outliers across multiple variables, and can be found <a href="isolation_forest.html" class="link">here.</a></p>
+                <p class="proj-text">Outlier Mirrors was coded in p5.js originally, and utilizes Python as well.</p>
+                <a href="comm250_final/grothwell_outlierMirrors/index.html" class="link">Experience Outlier Mirrors here.</a>
             </div>
         </div>
-        <div>
-                <h2>Resume</h2>
-                <object data="assets/GrothwellResume_September.pdf" type="application/pdf" width="80%" height="300px">
-                    <p>Your browser does not support PDFs. <a href="file.pdf">Download it here</a>.</p>
-                </object>
-            </div>
+        <div class="resume-container">
+            <h2 id="resume-title">Resume</h2>
+            <object data="assets/GrothwellResume_September.pdf" type="application/pdf" width="80%" height="300px" id="resume">
+                <p>Your browser does not support PDFs. <a href="file.pdf" class="link">Download it here</a>.</p>
+            </object>
+        </div>
     </main>
     <footer>
 
