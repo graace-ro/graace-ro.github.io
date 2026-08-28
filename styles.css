@@ -1,6 +1,7 @@
+/*Color Pallette: https://colorhunt.co/palette/30afff92eeffd8ffc5c4f7ca*/
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -14,16 +15,14 @@ h2{
     font-weight: 600;
     text-align: center;
     padding: 5px;
-    background-color: #d4d4d4;
-    width: 100vw;
+    background-color: #92EEFF;
 }
 
 h3{
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 500;
-    margin: 25px;
     padding: 5px;
-    background-color: #e5e3e6;
+    background-color: #C4F7CA;
 }
 
 p{
@@ -38,9 +37,8 @@ header{
     top: 0;
     width: 100%;
     z-index: 1000;
-    background-color: white;
     padding: 25px;
-    background-color: #c4c4c4;
+    background-color: #30AFFF;
 }
 
 button{
@@ -49,6 +47,7 @@ button{
     width: 150px;
     height: 50px;
     border-radius: 10px;
+    background-color: #30AFFF;
 }
 
 #title-container{
@@ -60,7 +59,7 @@ button{
 }
 
 .content-container{
-    margin: 50px 0px 50px 0px;
+    background-color: #D8FFC5;
 }
 
 
@@ -74,10 +73,6 @@ button{
     flex-direction: row;
     justify-content: center; /*this is the y axis*/
     align-items: center; /*this is the x axis because we're in a row and that's the main axis*/
-}
-
-#about-me-title{
-    margin: 0px;
 }
 
 #headshot{
@@ -100,12 +95,12 @@ button{
 }
 
 .proj{
-    margin: 50px;
+    padding: 50px;
 }
 
 .proj-screenshot{
     width: 35%;
-    margin: 0px 50px 0px 50px;
+    margin: 50px;
 }
 
 .proj-button{
@@ -114,19 +109,13 @@ button{
     margin: 5px;
 }
 
-#viewport-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;;
-}
-
-
-
-#outlier-container{
+.proj-info-container{
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 25px;
 }
+
 
 .proj-text{
     display: flex;
@@ -154,9 +143,13 @@ button{
     width: 100vw;
 }
 
-#resume-footer{
+#resume-header{
     height: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#home-button{
+    background-color: #92EEFF;
 }
