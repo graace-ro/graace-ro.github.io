@@ -77,14 +77,14 @@ button{
 }
 
 #about-me-title{
-    margin: 19.920px 0px 0px 0px;
+    margin: 0px;
 }
 
 #headshot{
     border-radius: 50%;
     height: 350px;
     margin: 50px;
-}
+} 
 
 #about-me-description{
     text-align: center;
