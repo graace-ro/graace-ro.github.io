@@ -1,0 +1,12 @@
+schema: "classroom50/repo-config/v1"
+classroom: "comp-426"
+assignment: "a01-personal-portfolio"
+owner:
+  username: "graace-ro"
+  id: 206774637
+  accepted_at: "2026-08-28T02:20:15Z"
+source:
+  owner: "comp426-26f"
+  owner_id: 306301300
+  repo: "a01-template"
+  branch: "main"
