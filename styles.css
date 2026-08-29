@@ -50,6 +50,15 @@ button{
     background-color: #30AFFF;
 }
 
+li{
+    font-family: 'Inter', sans-serif;
+    margin: 5px;
+}
+
+ul{
+    padding: 25px;
+}
+
 #title-container{
     margin: 5px;
 }
@@ -152,4 +161,22 @@ button{
 
 #home-button{
     background-color: #92EEFF;
+}
+
+
+
+#class-container{
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#skill-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
